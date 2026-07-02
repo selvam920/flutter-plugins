@@ -21,4 +21,4 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
-  pointycastle: ^3.7.3
+  pointycastle: ^4.0.0

@@ -13,7 +13,7 @@ dependencies:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
   ffi: ^2.0.1
-  system_clock: ^2.0.0
+  system_clock: ^3.0.0
 
 dev_dependencies:
   ffigen: ^20.1.1
