@@ -1,0 +1,1 @@
+Get-ChildItem -Recurse -Filter "pubspec.yaml" | ForEach-Object { Set-Location $_.DirectoryName; Write-Host "Pub Upgrade: $($_.DirectoryName)"; flutter pub upgrade --major-versions }

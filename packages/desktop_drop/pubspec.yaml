@@ -17,6 +17,7 @@ dependencies:
   web: ^1.1.1
   universal_platform: ^1.1.0
 
+  cupertino_ui: any
 dev_dependencies:
   flutter_test:
     sdk: flutter

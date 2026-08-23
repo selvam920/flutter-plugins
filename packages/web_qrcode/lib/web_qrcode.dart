@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:js_util';
 
-import 'package:flutter/cupertino.dart';
+import 'package:cupertino_ui/cupertino_ui.dart';
 
 import 'src/html5_qrcode.dart';
 

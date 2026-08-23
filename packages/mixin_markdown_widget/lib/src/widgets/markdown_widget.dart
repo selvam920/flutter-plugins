@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import '../render/markdown_document_view.dart';
 import '../selection/selection_controller.dart';

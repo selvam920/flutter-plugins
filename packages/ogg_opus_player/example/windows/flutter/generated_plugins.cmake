@@ -7,8 +7,8 @@ list(APPEND FLUTTER_PLUGIN_LIST
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST
+  jni
   ogg_opus_player
-  system_clock
 )
 
 set(PLUGIN_BUNDLED_LIBRARIES)

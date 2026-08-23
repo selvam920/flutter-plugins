@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import '../../clipboard/plain_text_serializer.dart';
 import '../../core/document.dart';

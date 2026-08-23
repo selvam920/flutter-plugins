@@ -4,7 +4,7 @@ library;
 import 'dart:async';
 import 'dart:js';
 
-import 'package:flutter/cupertino.dart';
+import 'package:cupertino_ui/cupertino_ui.dart';
 import 'package:js/js.dart';
 
 @JS()

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:mixin_markdown_widget/mixin_markdown_widget.dart';
 
 class CompositeSelectionDemoPage extends StatefulWidget {

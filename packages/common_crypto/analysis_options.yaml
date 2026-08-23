@@ -5,3 +5,10 @@ include: package:flutter_lints/flutter.yaml
 analyzer:
   exclude:
     - 'lib/src/common_crypto_bindings_generated.dart'
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
+    - windows/**
+    - macos/**
+    - linux/**

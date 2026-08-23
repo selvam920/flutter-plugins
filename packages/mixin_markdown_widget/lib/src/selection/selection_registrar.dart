@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import '../core/document.dart';
 import '../render/selection/markdown_selection_gesture_detector.dart';
