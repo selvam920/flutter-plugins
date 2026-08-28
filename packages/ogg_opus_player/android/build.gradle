@@ -1,21 +1,22 @@
 // The Android Gradle Plugin builds the native code with the Android NDK.
+plugins {
+    id 'com.android.library'
+}
 
 group 'one.mixin.ogg_opus_player'
 version '1.0'
 
 buildscript {
 
-    ext.kotlin_version = "2.1.0"
-
+    
     repositories {
         google()
         mavenCentral()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.9.1'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
+        classpath 'com.android.tools.build:gradle:9.0.1'
+            }
 }
 
 rootProject.allprojects {
@@ -26,14 +27,15 @@ rootProject.allprojects {
 }
 
 apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
 
 android {
     namespace "one.mixin.ogg_opus_player"
     
     // Bumping the plugin compileSdkVersion requires all clients of this plugin
+    // Bumping the plugin compileSdk version requires all clients of this plugin
     // to bump the version in their app.
-    compileSdkVersion 36
+    compileSdk = 37
+    compileSdk = 37
 
     // Bumping the plugin ndkVersion requires all clients of this plugin to bump
     // the version in their app and to download a newer version of the NDK.
@@ -55,20 +57,25 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = '11'
-    }
-
+    
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
 
     defaultConfig {
         minSdkVersion 24
+    }
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
     }
 }
 
