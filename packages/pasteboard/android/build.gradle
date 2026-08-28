@@ -13,9 +13,7 @@ allprojects {
 }
 
 android {
-    if (project.android.hasProperty("namespace")) {
-        namespace = "one.mixin.pasteboard"
-    }
+    namespace = "one.mixin.pasteboard"
 
     compileSdk = 37
 
